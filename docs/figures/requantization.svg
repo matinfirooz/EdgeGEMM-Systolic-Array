@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2220" height="950" viewBox="0 0 2220 950">
+<rect width="2220" height="950" fill="white"/>
+<text id="t1" x="44" y="49" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold" fill="#162b3b" text-anchor="start">Affine requantizer — widened integer datapath</text>
+<text id="t2" x="44" y="82" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#61717d" text-anchor="start">Default widths shown: ACC_W=32, OUT_W=8. All blocks are combinational; per-column configuration is held separately.</text>
+<polyline points="44,104 2176,104" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t3" x="60" y="415" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#74519b" text-anchor="start">acc[31:0]</text>
+<polyline points="60,460 175,460" fill="none" stroke="#74519b" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="175,460 166,456 166,464" fill="#74519b" stroke="#74519b" stroke-width="0.5"/>
+<polyline points="120,467 130,453" fill="none" stroke="#74519b" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t4" x="125" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#74519b" text-anchor="middle">32</text>
+<rect x="175" y="423" width="115" height="74" fill="#f7fbfc" stroke="#74519b" stroke-width="1.8"/>
+<text id="t5" x="232.5" y="464.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#74519b" text-anchor="middle">SEXT</text>
+<text id="t6" x="232.5" y="484" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">32 → 33</text>
+<polyline points="290,460 316,460" fill="none" stroke="#74519b" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="316,460 307,456 307,464" fill="#74519b" stroke="#74519b" stroke-width="0.5"/>
+<circle cx="360" cy="460" r="44" fill="white" stroke="#087c77" stroke-width="2.2"/>
+<text id="t7" x="360" y="471.56" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="normal" fill="#087c77" text-anchor="middle">+</text>
+<text id="t8" x="360" y="194" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" fill="#9b641b" text-anchor="middle">bias[31:0]</text>
+<rect x="300" y="250" width="120" height="70" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t9" x="360.0" y="289.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#9b641b" text-anchor="middle">SEXT</text>
+<text id="t10" x="360.0" y="307" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">32 → 33</text>
+<polyline points="360,205 360,250" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="360,250 356,241 364,241" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="360,320 360,416" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="360,416 356,407 364,407" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="355,372 365,358" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t11" x="360" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">33</text>
+<polyline points="404,460 605,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="605,460 596,456 596,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="495,467 505,453" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t12" x="500" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">33</text>
+<circle cx="650" cy="460" r="45" fill="white" stroke="#087c77" stroke-width="2.2"/>
+<text id="t13" x="650" y="471.56" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="normal" fill="#087c77" text-anchor="middle">×</text>
+<text id="t14" x="650" y="194" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" fill="#9b641b" text-anchor="middle">multiplier[15:0]</text>
+<rect x="590" y="250" width="120" height="70" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t15" x="650.0" y="289.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17.0" font-weight="bold" fill="#9b641b" text-anchor="middle">0 || scale</text>
+<text id="t16" x="650.0" y="307" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">16 → 17</text>
+<polyline points="650,205 650,250" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="650,250 646,241 654,241" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="650,320 650,415" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="650,415 646,406 654,406" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="645,372 655,358" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t17" x="650" y="352" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">17</text>
+<polyline points="695,460 765,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="765,460 756,456 756,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="720,467 730,453" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t18" x="725" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">50</text>
+<circle cx="765" cy="460" r="3.8" fill="#087c77"/>
+<rect x="845" y="255" width="365" height="135" fill="#f7fbfc" stroke="#087c77" stroke-width="1.8"/>
+<text id="t19" x="1027.5" y="326.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="22.243589743589745" font-weight="bold" fill="#087c77" text-anchor="middle">ABS → shift → round → sign</text>
+<text id="t20" x="1027.5" y="377" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">51-bit magnitude; nearest ties away</text>
+<rect x="845" y="590" width="365" height="100" fill="#f7fbfc" stroke="#087c77" stroke-width="1.8"/>
+<text id="t21" x="1027.5" y="644.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#087c77" text-anchor="middle">Arithmetic right shift</text>
+<text id="t22" x="1027.5" y="677" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">sign-extend to 51 bits, then &gt;&gt;&gt; s</text>
+<polyline points="765,460 765,322 845,322" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="845,322 836,318 836,326" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="765,460 765,640 845,640" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="845,640 836,636 836,644" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polygon points="1300,365 1370,383 1370,537 1300,555" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t23" x="1335.0" y="465.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#087c77" text-anchor="middle">MUX</text>
+<polyline points="1210,322 1250,322 1250,412.5 1300,412.5" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1300,412.5 1291,408.5 1291,416.5" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1210,640 1250,640 1250,507.5 1300,507.5" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1300,507.5 1291,503.5 1291,511.5" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<text id="t24" x="1278" y="418.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#61717d" text-anchor="end">1</text>
+<text id="t25" x="1278" y="513.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#61717d" text-anchor="end">0</text>
+<text id="t26" x="1335" y="616" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">round_nearest</text>
+<polyline points="1335,590 1335.0,546" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1335.0,546 1331.0,555 1339.0,555" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t27" x="995" y="226" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">right_shift[5:0]</text>
+<polyline points="995,234 995,255" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="995,255 991,246 999,246" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t28" x="995" y="743" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">right_shift[5:0]</text>
+<polyline points="995,723 995,690" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="995,690 991,699 999,699" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="1370,460.0 1466,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1466,460 1457,456 1457,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1405,467 1415,453" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t29" x="1410" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">51</text>
+<circle cx="1510" cy="460" r="44" fill="white" stroke="#087c77" stroke-width="2.2"/>
+<text id="t30" x="1510" y="471.56" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="normal" fill="#087c77" text-anchor="middle">+</text>
+<rect x="1450" y="635" width="120" height="70" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t31" x="1510.0" y="674.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#9b641b" text-anchor="middle">SEXT</text>
+<text id="t32" x="1510.0" y="692" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">8 → 51</text>
+<text id="t33" x="1510" y="773" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" fill="#9b641b" text-anchor="middle">zero_point[7:0]</text>
+<polyline points="1510,746 1510,705" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1510,705 1506,714 1514,714" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="1510,635 1510,504" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1510,504 1506,513 1514,513" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1505,582 1515,568" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t34" x="1510" y="562" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">51</text>
+<polyline points="1554,460 1625,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1625,460 1616,456 1616,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<rect x="1625" y="410" width="210" height="100" fill="#f7fbfc" stroke="#087c77" stroke-width="1.8"/>
+<text id="t35" x="1730.0" y="464.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#087c77" text-anchor="middle">ReLU mux</text>
+<text id="t36" x="1730.0" y="497" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">relu ? max(x,zp) : x</text>
+<text id="t37" x="1730" y="332" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">relu_en</text>
+<polyline points="1730,345 1730,410" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1730,410 1726,401 1734,401" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="1835,460 1900,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1900,460 1891,456 1891,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1860,467 1870,453" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t38" x="1865" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">51</text>
+<rect x="1900" y="410" width="170" height="100" fill="#f7fbfc" stroke="#087c77" stroke-width="1.8"/>
+<text id="t39" x="1985.0" y="464.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#087c77" text-anchor="middle">Saturate</text>
+<text id="t40" x="1985.0" y="497" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">−128 … 127</text>
+<polyline points="2070,460 2165,460" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="2165,460 2156,456 2156,464" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="2113,467 2123,453" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t41" x="2118" y="447" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">8</text>
+<text id="t42" x="2165" y="413" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#087c77" text-anchor="end">out_data</text>
+<polyline points="44,851 2176,851" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t43" x="44" y="878" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Bias addition is 33 bits, scale multiplication is 50 bits, and shift/round/zero-point operations use 51-bit guarded values.</text>
+<text id="t44" x="44" y="903" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">The final clamp alone reduces precision to OUT_W. ReLU clamps at output zero_point; input zero-point subtraction is outside this datapath.</text>
+</svg>

@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="1260" viewBox="0 0 1820 1260">
+<rect width="1820" height="1260" fill="white"/>
+<text id="t1" x="44" y="49" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold" fill="#162b3b" text-anchor="start">Processing element — register-transfer datapath</text>
+<text id="t2" x="44" y="82" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#61717d" text-anchor="start">systolic_pe + signed_mac · D-bit signed operands · W-bit wrapping accumulator · one registered operand hop per enabled edge</text>
+<polyline points="44,104 1776,104" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t3" x="52" y="300" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#087c77" text-anchor="start">a_in[D−1:0]</text>
+<text id="t4" x="52" y="499" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#285d9f" text-anchor="start">b_in[D−1:0]</text>
+<polyline points="55,325 460,325" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="460,325 451,321 451,329" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="55,525 460,525" fill="none" stroke="#285d9f" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="460,525 451,521 451,529" fill="#285d9f" stroke="#285d9f" stroke-width="0.5"/>
+<circle cx="240" cy="325" r="3.8" fill="#087c77"/>
+<circle cx="300" cy="525" r="3.8" fill="#285d9f"/>
+<polygon points="460,300 520,318 520,382 460,400" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t5" x="490.0" y="355.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#087c77" text-anchor="middle">MUX</text>
+<polygon points="460,500 520,518 520,582 460,600" fill="#f1f7f8" stroke="#285d9f" stroke-width="1.8"/>
+<text id="t6" x="490.0" y="555.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#285d9f" text-anchor="middle">MUX</text>
+<text id="t7" x="424" y="370" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#61717d" text-anchor="start">0</text>
+<polyline points="435,375 460,375.0" fill="none" stroke="#61717d" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="460,375.0 451,371.0 451,379.0" fill="#61717d" stroke="#61717d" stroke-width="0.5"/>
+<text id="t8" x="424" y="570" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#61717d" text-anchor="start">0</text>
+<polyline points="435,575 460,575.0" fill="none" stroke="#61717d" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="460,575.0 451,571.0 451,579.0" fill="#61717d" stroke="#61717d" stroke-width="0.5"/>
+<text id="t9" x="465" y="285" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#61717d" text-anchor="start">isolation</text>
+<polyline points="520,350.0 660,350 660,420 745,420" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="745,420 736,416 736,424" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="520,550.0 660,550 660,480 745,480" fill="none" stroke="#285d9f" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="745,480 736,476 736,484" fill="#285d9f" stroke="#285d9f" stroke-width="0.5"/>
+<circle cx="795" cy="450" r="55" fill="white" stroke="#087c77" stroke-width="2.2"/>
+<text id="t10" x="795" y="461.56" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="normal" fill="#087c77" text-anchor="middle">×</text>
+<polyline points="850,450 960,450" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="960,450 951,446 951,454" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="900,457 910,443" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t11" x="905" y="437" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">2D</text>
+<rect x="960" y="414" width="185" height="72" fill="#f7fbfc" stroke="#087c77" stroke-width="1.8"/>
+<text id="t12" x="1052.5" y="454.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#087c77" text-anchor="middle">Sign extend</text>
+<text id="t13" x="1052.5" y="473" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">2D → W</text>
+<polyline points="1145,450 1240,450" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1240,450 1231,446 1231,454" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1185,457 1195,443" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t14" x="1190" y="437" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">W</text>
+<circle cx="1285" cy="450" r="45" fill="white" stroke="#087c77" stroke-width="2.2"/>
+<text id="t15" x="1285" y="461.56" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="normal" fill="#087c77" text-anchor="middle">+</text>
+<polyline points="1330,450 1450,450" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1450,450 1441,446 1441,454" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<rect x="1450" y="403" width="160" height="94" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t16" x="1463" y="456.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="start">D</text>
+<text id="t17" x="1597" y="456.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="end">Q</text>
+<text id="t18" x="1530.0" y="443.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#087c77" text-anchor="middle">ACC</text>
+<text id="t19" x="1530.0" y="466.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal" fill="#61717d" text-anchor="middle">W</text>
+<polygon points="1468,497 1468,484 1481,490.5" fill="white" stroke="#087c77" stroke-width="1.4"/>
+<polyline points="1610,450 1765,450" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1765,450 1756,446 1756,454" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<circle cx="1670" cy="450" r="3.8" fill="#087c77"/>
+<text id="t20" x="1765" y="425" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#087c77" text-anchor="end">acc_out</text>
+<polyline points="1670,450 1670,635 1285,635 1285,495" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1285,495 1281,504 1289,504" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<text id="t21" x="1480" y="663" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#087c77" text-anchor="middle">Local partial-sum feedback</text>
+<text id="t22" x="1530" y="360" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">execute_mac</text>
+<polyline points="1530,367 1530,403" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1530,403 1526,394 1534,394" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t23" x="1466" y="535" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">clk</text>
+<polyline points="1474,513 1474,497" fill="none" stroke="#61717d" stroke-width="1.4" stroke-linejoin="miter"/>
+<text id="t24" x="1612" y="552" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="end">clear / rst_n</text>
+<polyline points="240,325 240,181 1000,181" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1000,181 991,177 991,185" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polygon points="1000,156 1055,174 1055,238 1000,256" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t25" x="1027.5" y="211.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#087c77" text-anchor="middle">MUX</text>
+<polyline points="950,231 1000,231.0" fill="none" stroke="#61717d" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="1000,231.0 991,227.0 991,235.0" fill="#61717d" stroke="#61717d" stroke-width="0.5"/>
+<text id="t26" x="932" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#61717d" text-anchor="start">0</text>
+<polyline points="1055,206.0 1220,206" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1220,206 1211,202 1211,210" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<rect x="1220" y="161" width="195" height="90" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t27" x="1233" y="212.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="start">D</text>
+<text id="t28" x="1402" y="212.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="end">Q</text>
+<text id="t29" x="1317.5" y="199.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#087c77" text-anchor="middle">A + vA</text>
+<text id="t30" x="1317.5" y="222.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal" fill="#61717d" text-anchor="middle">D + 1</text>
+<polygon points="1238,251 1238,238 1251,244.5" fill="white" stroke="#087c77" stroke-width="1.4"/>
+<polyline points="1415,206 1765,206" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1765,206 1756,202 1756,210" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1505,213 1515,199" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t31" x="1510" y="193" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">D+1</text>
+<text id="t32" x="1765" y="182" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#087c77" text-anchor="end">a_out, a_valid_out → east</text>
+<text id="t33" x="1050" y="280" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">a_valid_in</text>
+<polyline points="1027,271 1027.5,247" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1027.5,247 1023.5,256 1031.5,256" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t34" x="1318" y="142" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">enable / clear / rst_n</text>
+<polyline points="1160,148 1160,181 1220,181" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1220,181 1211,177 1211,185" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t35" x="1155" y="142" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="end">vA</text>
+<polyline points="300,525 300,976 1000,976" fill="none" stroke="#285d9f" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1000,976 991,972 991,980" fill="#285d9f" stroke="#285d9f" stroke-width="0.5"/>
+<polygon points="1000,951 1055,969 1055,1033 1000,1051" fill="#f1f7f8" stroke="#285d9f" stroke-width="1.8"/>
+<text id="t36" x="1027.5" y="1006.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#285d9f" text-anchor="middle">MUX</text>
+<polyline points="950,1026 1000,1026.0" fill="none" stroke="#61717d" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="1000,1026.0 991,1022.0 991,1030.0" fill="#61717d" stroke="#61717d" stroke-width="0.5"/>
+<text id="t37" x="932" y="1032" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#61717d" text-anchor="start">0</text>
+<polyline points="1055,1001.0 1220,1001" fill="none" stroke="#285d9f" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1220,1001 1211,997 1211,1005" fill="#285d9f" stroke="#285d9f" stroke-width="0.5"/>
+<rect x="1220" y="956" width="195" height="90" fill="#f1f7f8" stroke="#285d9f" stroke-width="1.8"/>
+<text id="t38" x="1233" y="1007.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="start">D</text>
+<text id="t39" x="1402" y="1007.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="end">Q</text>
+<text id="t40" x="1317.5" y="994.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#285d9f" text-anchor="middle">B + vB</text>
+<text id="t41" x="1317.5" y="1017.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal" fill="#61717d" text-anchor="middle">D + 1</text>
+<polygon points="1238,1046 1238,1033 1251,1039.5" fill="white" stroke="#285d9f" stroke-width="1.4"/>
+<polyline points="1415,1001 1765,1001" fill="none" stroke="#285d9f" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1765,1001 1756,997 1756,1005" fill="#285d9f" stroke="#285d9f" stroke-width="0.5"/>
+<polyline points="1505,1008 1515,994" fill="none" stroke="#285d9f" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t42" x="1510" y="988" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#285d9f" text-anchor="middle">D+1</text>
+<text id="t43" x="1765" y="977" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#285d9f" text-anchor="end">b_out, b_valid_out → south</text>
+<text id="t44" x="1065" y="1073" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">b_valid_in</text>
+<polyline points="1027,1060 1027.5,1042" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1027.5,1042 1023.5,1051 1031.5,1051" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t45" x="1318" y="938" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">enable / clear / rst_n</text>
+<polyline points="1160,943 1160,976 1220,976" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1220,976 1211,972 1211,980" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t46" x="1155" y="937" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="end">vB</text>
+<text id="t47" x="65" y="733" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#9b641b" text-anchor="start">a_valid_in</text>
+<text id="t48" x="65" y="773" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#9b641b" text-anchor="start">b_valid_in</text>
+<text id="t49" x="65" y="813" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#9b641b" text-anchor="start">enable</text>
+<text id="t50" x="65" y="853" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#9b641b" text-anchor="start">!clear</text>
+<rect x="370" y="702" width="225" height="165" fill="#fbf7ee" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t51" x="483" y="775" font-family="DejaVu Sans,Arial,sans-serif" font-size="42" font-weight="normal" fill="#9b641b" text-anchor="middle">&amp;</text>
+<text id="t52" x="483" y="837" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#9b641b" text-anchor="middle">issue</text>
+<polyline points="235,728 370,728" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="370,728 361,724 361,732" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="235,768 370,768" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="370,768 361,764 361,772" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="235,808 370,808" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="370,808 361,804 361,812" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="235,848 370,848" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="370,848 361,844 361,852" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="595,787 780,787" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="780,787 771,783 771,791" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t53" x="688" y="775" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">issue</text>
+<rect x="780" y="735" width="300" height="105" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t54" x="930.0" y="791.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#9b641b" text-anchor="middle">&amp; !zero_hold</text>
+<text id="t55" x="930.0" y="827" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">zero_hold = ZERO_GATE &amp; is_zero</text>
+<polyline points="1080,787 1210,787" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1210,787 1201,783 1201,791" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t56" x="1210" y="774" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="end">execute_mac</text>
+<rect x="780" y="886" width="300" height="65" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t57" x="930.0" y="925.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#9b641b" text-anchor="middle">a==0 OR b==0</text>
+<polyline points="930,886 930,840" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="930,840 926,849 934,849" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t58" x="953" y="865" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">is_zero</text>
+<text id="t59" x="735" y="900" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="end">a_in, b_in</text>
+<polyline points="690,918 780,918" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter"/>
+<polygon points="780,918 771,914 771,922" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t60" x="477" y="446" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">execute_mac</text>
+<polyline points="490,426 490.0,391" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490.0,391 486.0,400 494.0,400" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t61" x="477" y="659" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">execute_mac</text>
+<polyline points="490,639 490.0,591" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490.0,591 486.0,600 494.0,600" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="44,1161 1776,1161" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t62" x="44" y="1188" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Matching net labels denote the same control signal. Forwarding uses enable; ACC uses execute_mac. Clear/reset take priority.</text>
+<text id="t63" x="44" y="1213" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">No register exists between the multiplier and adder. Zero isolation holds the accumulator and does not shorten the schedule.</text>
+</svg>

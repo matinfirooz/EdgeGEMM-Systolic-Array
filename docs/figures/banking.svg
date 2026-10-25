@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+<rect width="1800" height="1250" fill="white"/>
+<text id="t1" x="44" y="49" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="bold" fill="#162b3b" text-anchor="start">Operand buffering — write decode and banked read mux</text>
+<text id="t2" x="44" y="82" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#61717d" text-anchor="start">One operand_buffer shown; the core instantiates one for A and one for B. All read logic below is repeated per lane.</text>
+<polyline points="44,104 1756,104" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t3" x="65" y="170" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#162b3b" text-anchor="start">WR: bank, lane, index, data</text>
+<rect x="65" y="240" width="285" height="105" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t4" x="207.5" y="296.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="bold" fill="#9b641b" text-anchor="middle">Write decode</text>
+<text id="t5" x="207.5" y="332" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">valid &amp; lane_ok &amp; index_ok</text>
+<polyline points="180,185 180,240" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="180,240 176,231 184,231" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t6" x="195" y="214" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">wr_valid</text>
+<rect x="490" y="230" width="390" height="265" fill="white" stroke="#087c77" stroke-width="1.8"/>
+<text id="t7" x="685.0" y="258" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#087c77" text-anchor="middle">Bank 0</text>
+<rect x="502.0" y="272.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="272.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="272.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="272.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="272.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="320.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="320.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="320.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="320.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="320.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="368.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="368.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="368.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="368.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="368.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="416.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="416.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="416.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="416.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="416.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<text id="t8" x="685.0" y="484" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">LANES × DEPTH × DATA_W</text>
+<rect x="490" y="690" width="390" height="265" fill="white" stroke="#087c77" stroke-width="1.8"/>
+<text id="t9" x="685.0" y="718" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#087c77" text-anchor="middle">Bank 1</text>
+<rect x="502.0" y="732.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="732.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="732.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="732.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="732.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="780.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="780.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="780.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="780.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="780.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="828.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="828.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="828.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="828.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="828.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="502.0" y="876.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="575.2" y="876.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="648.4" y="876.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="721.6" y="876.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<rect x="794.8" y="876.0" width="73.2" height="48.0" fill="#f1f7f8" stroke="#b4c6cd" stroke-width="0.7"/>
+<text id="t10" x="685.0" y="944" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="middle">LANES × DEPTH × DATA_W</text>
+<polyline points="350,270 430,270 490,270" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490,270 481,266 481,274" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="350,315 400,315 400,730 490,730" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490,730 481,726 481,734" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t11" x="385" y="253" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">we0</text>
+<text id="t12" x="415" y="714" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">we1</text>
+<text id="t13" x="65" y="397" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#9b641b" text-anchor="start">we0 = valid &amp; !wr_bank</text>
+<text id="t14" x="65" y="428" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#9b641b" text-anchor="start">we1 = valid &amp;  wr_bank</text>
+<text id="t15" x="65" y="466" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#61717d" text-anchor="start">Both also require legal lane/index.</text>
+<rect x="490" y="520" width="390" height="62" fill="#f1f7f8" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t16" x="503" y="557.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="start">D</text>
+<text id="t17" x="867" y="557.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="end">Q</text>
+<text id="t18" x="685.0" y="544.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#9b641b" text-anchor="middle">Initialized bits</text>
+<text id="t19" x="685.0" y="567.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal" fill="#61717d" text-anchor="middle">1 per operand</text>
+<polygon points="508,582 508,569 521,575.5" fill="white" stroke="#9b641b" stroke-width="1.4"/>
+<rect x="490" y="980" width="390" height="62" fill="#f1f7f8" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t20" x="503" y="1017.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="start">D</text>
+<text id="t21" x="867" y="1017.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#61717d" text-anchor="end">Q</text>
+<text id="t22" x="685.0" y="1004.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="bold" fill="#9b641b" text-anchor="middle">Initialized bits</text>
+<text id="t23" x="685.0" y="1027.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="normal" fill="#61717d" text-anchor="middle">1 per operand</text>
+<polygon points="508,1042 508,1029 521,1035.5" fill="white" stroke="#9b641b" stroke-width="1.4"/>
+<text id="t24" x="70" y="585" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">rd_index[lane]</text>
+<polyline points="240,580 330,580 330,450 490,450" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490,450 481,446 481,454" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="330,580 330,910 490,910" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="490,910 481,906 481,914" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<circle cx="330" cy="580" r="3.8" fill="#9b641b"/>
+<text id="t25" x="63" y="628" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#61717d" text-anchor="start">Asynchronous read</text>
+<text id="t26" x="63" y="655" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Address differs by lane.</text>
+<text id="t27" x="63" y="682" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">No read pipeline register.</text>
+<polyline points="880,365 945,365 945,580 1030,580" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1030,580 1021,576 1021,584" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="880,822 945,822 945,660 1030,660" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1030,660 1021,656 1021,664" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="880,551 990,551 990,580 1030,580" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1030,580 1021,576 1021,584" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="880,1011 990,1011 990,660 1030,660" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1030,660 1021,656 1021,664" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polygon points="1030,540 1100,558 1100,682 1030,700" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t28" x="1065.0" y="625.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#087c77" text-anchor="middle">MUX</text>
+<text id="t29" x="1065" y="524" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#087c77" text-anchor="middle">data + init</text>
+<polyline points="1065,765 1065,691" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1065,691 1061,700 1069,700" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t30" x="1065" y="795" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="middle">rd_bank</text>
+<polyline points="1100,620 1300,620" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1300,620 1291,616 1291,624" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1185,627 1195,613" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t31" x="1190" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">D</text>
+<rect x="1180" y="315" width="485" height="100" fill="#f7fbfc" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t32" x="1422.5" y="372.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="21.620370370370374" font-weight="bold" fill="#9b641b" text-anchor="middle">rd_enable &amp; index_ok &amp; selected_init</text>
+<polyline points="1135,620 1135,460 1375,460 1375,415" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1375,415 1371,424 1379,424" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<text id="t33" x="1180" y="284" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="normal" fill="#9b641b" text-anchor="start">Per-lane read qualification</text>
+<polygon points="1300,580 1370,598 1370,722 1300,740" fill="#f1f7f8" stroke="#087c77" stroke-width="1.8"/>
+<text id="t34" x="1335.0" y="665.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="normal" fill="#087c77" text-anchor="middle">MUX</text>
+<polyline points="1210,700 1300,700.0" fill="none" stroke="#61717d" stroke-width="2" stroke-linejoin="miter"/>
+<polygon points="1300,700.0 1291,696.0 1291,704.0" fill="#61717d" stroke="#61717d" stroke-width="0.5"/>
+<text id="t35" x="1185" y="707" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="normal" fill="#61717d" text-anchor="start">0</text>
+<polyline points="1423,415 1423,765 1335,765 1335.0,731" fill="none" stroke="#9b641b" stroke-width="1.6" stroke-linejoin="miter" stroke-dasharray="6 5"/>
+<polygon points="1335.0,731 1331.0,740 1339.0,740" fill="#9b641b" stroke="#9b641b" stroke-width="0.5"/>
+<polyline points="1370,660.0 1690,660" fill="none" stroke="#087c77" stroke-width="3" stroke-linejoin="miter"/>
+<polygon points="1690,660 1681,656 1681,664" fill="#087c77" stroke="#087c77" stroke-width="0.5"/>
+<polyline points="1525,667 1535,653" fill="none" stroke="#087c77" stroke-width="1.5" stroke-linejoin="miter"/>
+<text id="t36" x="1530" y="647" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="normal" fill="#087c77" text-anchor="middle">D</text>
+<text id="t37" x="1690" y="639" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="normal" fill="#087c77" text-anchor="end">rd_data[lane]</text>
+<text id="t38" x="1180" y="869" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="normal" fill="#61717d" text-anchor="start">D = DATA_W; repeat for every lane</text>
+<text id="t39" x="1180" y="899" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Invalid or uninitialized reads select zero.</text>
+<text id="t40" x="1180" y="929" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Bank payload persists until overwritten.</text>
+<rect x="65" y="1070" width="1600" height="86" fill="#fbf7ee" stroke="#9b641b" stroke-width="1.8"/>
+<text id="t41" x="85" y="1100" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" font-weight="bold" fill="#9b641b" text-anchor="start">In edgegemm_core, before operand_buffer:</text>
+<text id="t42" x="85" y="1134" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" font-weight="normal" fill="#9b641b" text-anchor="start">load_ready = !busy OR (load_bank != active_bank);   accepted write = load_valid &amp; load_ready</text>
+<polyline points="44,1169 1756,1169" fill="none" stroke="#c9d4db" stroke-width="1" stroke-linejoin="miter"/>
+<text id="t43" x="44" y="1196" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="normal" fill="#61717d" text-anchor="start">Bank muxes are combinational; initialized bits reset to zero. Payload storage is register/distributed storage, not a synchronous SRAM macro.</text>
+</svg>
