@@ -1,0 +1,18 @@
+{
+  "rtl/affine_requantize.sv": "eab776c102e3d0e93ad045175fd8b23774d6482731208d836dbf53dfd116d788",
+  "rtl/channel_config.sv": "f791e3e3809de555bfc4f28c59d32644b3a3b89f2dce7b6f4e30538bb6c1d0cf",
+  "rtl/edgegemm_core.sv": "ce3f8cb1c71b30e3646d59f73dc18a6deab4c13ed17ea23566edd939a5a83d40",
+  "rtl/edgegemm_top.sv": "551a4946a37ea798e2b7598108e0c327f1d2fda22f3cc89f8e8b7c4386a5b133",
+  "rtl/operand_buffer.sv": "fb3db3501b028acd62e76491d27de482352f068bec14453009091fb8a6860e40",
+  "rtl/pe.sv": "2fc2eb6de16f308c79e5c33c190c96ee5378c1c59e658c43affe3e90533e12b0",
+  "rtl/perf_counters.sv": "5159191b8dfa1ac67ab8bc66069908d362e09ec7ab6270d68c12ee1f87fd67af",
+  "rtl/requantize.sv": "5dcd36c910e6f8d6fa300fe44765dc09b19fac1d5c6c43a0e81f2a3fa53fff09",
+  "rtl/result_buffer.sv": "ff58a193092cdf8d60e79e0ca4c76a549b4d9cba75767a860adef62973b0e587",
+  "rtl/result_streamer.sv": "d4bea6cc2a47f413bd07ebc181fa9d8468ce3d3c7bff7655b181e0e72d5ceaf6",
+  "rtl/signed_mac.sv": "585396f86dd337298657d3812f934f3616c7f0087a085ae19f2a23a422918e07",
+  "rtl/skew_injector.sv": "64ea857284e2a31833c61e1f6571ea265812108e9db99a1752716ebbbd64fa41",
+  "rtl/systolic_array.sv": "f66a0006b0176c5c6bd5a489284f52df94a3a4b8dde35da21e457c86e0e6049e",
+  "rtl/systolic_mesh.sv": "47eb7740a252df0dabde8c2cbe2a648d5866d38cd6353d9aa0f627fcad5f33f6",
+  "rtl/systolic_pe.sv": "9c2ed6e61a07992062ebc8b9c5dab2b7d1c18c5b07030426ae9157a5554cdb35",
+  "rtl/tile_controller.sv": "74aeb2f9eab6d4bd0d6a0217d3c4deb5925570a62bca45fb77e1bdfe2846645d"
+}

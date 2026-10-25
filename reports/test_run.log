@@ -1,0 +1,79 @@
+./build/golden
+EdgeGEMM C golden model
+C = A x B
+    13    12     1    18
+    37    24     9    38
+    -1    24    -9    14
+    10   -10    19   -13
+PASS: all 16 GEMM outputs and requantization checks match.
+Ideal 4x4 wavefront compute latency: 10 cycles.
+python3 -m unittest discover -s tests -v
+test_host_tiling_and_tail_masks (test_model.ModelTests.test_host_tiling_and_tail_masks) ... ok
+test_invalid_inputs (test_model.ModelTests.test_invalid_inputs) ... ok
+test_ksplit_requantize_only_after_sum (test_model.ModelTests.test_ksplit_requantize_only_after_sum) ... ok
+test_original_matrix (test_model.ModelTests.test_original_matrix) ... ok
+test_quantization_extremes (test_model.ModelTests.test_quantization_extremes) ... ok
+test_relu_at_quantized_zero (test_model.ModelTests.test_relu_at_quantized_zero) ... ok
+test_rounding_ties (test_model.ModelTests.test_rounding_ties) ... ok
+test_wavefront_random_rectangles (test_model.ModelTests.test_wavefront_random_rectangles) ... ok
+test_wraparound (test_model.ModelTests.test_wraparound) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.037s
+
+OK
+python3 tools/run_tests.py
+[1/53] PASS signed_mac
+[2/53] PASS pe
+[3/53] PASS systolic_pe
+[4/53] PASS systolic_mesh
+[5/53] PASS operand_buffer
+[6/53] PASS skew_injector
+[7/53] PASS tile_controller
+[8/53] PASS perf_counters
+[9/53] PASS result_buffer
+[10/53] PASS result_streamer
+[11/53] PASS channel_config
+[12/53] PASS requantize
+[13/53] PASS affine_requantize
+[14/53] PASS systolic_array
+[15/53] PASS edgegemm_top
+[16/53] PASS edgegemm_core
+[17/53] PASS signed_mac_DATA_W4_ACC_W8_ZERO_GATE0
+[18/53] PASS signed_mac_DATA_W4_ACC_W8_ZERO_GATE1
+[19/53] PASS signed_mac_DATA_W4_ACC_W32_ZERO_GATE0
+[20/53] PASS signed_mac_DATA_W4_ACC_W32_ZERO_GATE1
+[21/53] PASS pe_DATA_W4
+[22/53] PASS systolic_mesh_N1_DATA_W4
+[23/53] PASS systolic_mesh_N1_DATA_W8
+[24/53] PASS systolic_mesh_N2_DATA_W4
+[25/53] PASS systolic_mesh_N2_DATA_W8
+[26/53] PASS systolic_mesh_N4_DATA_W4
+[27/53] PASS systolic_mesh_N4_DATA_W8
+[28/53] PASS systolic_array_N1_DATA_W4
+[29/53] PASS systolic_array_N1_DATA_W8
+[30/53] PASS systolic_array_N2_DATA_W4
+[31/53] PASS systolic_array_N2_DATA_W8
+[32/53] PASS systolic_array_N4_DATA_W4
+[33/53] PASS systolic_array_N4_DATA_W8
+[34/53] PASS edgegemm_core_N1_K_MAX1_DATA_W4_ZERO_GATE0
+[35/53] PASS edgegemm_core_N1_K_MAX1_DATA_W4_ZERO_GATE1
+[36/53] PASS edgegemm_core_N1_K_MAX1_DATA_W8_ZERO_GATE0
+[37/53] PASS edgegemm_core_N1_K_MAX1_DATA_W8_ZERO_GATE1
+[38/53] PASS edgegemm_core_N2_K_MAX5_DATA_W4_ZERO_GATE0
+[39/53] PASS edgegemm_core_N2_K_MAX5_DATA_W4_ZERO_GATE1
+[40/53] PASS edgegemm_core_N2_K_MAX5_DATA_W8_ZERO_GATE0
+[41/53] PASS edgegemm_core_N2_K_MAX5_DATA_W8_ZERO_GATE1
+[42/53] PASS edgegemm_core_N3_K_MAX7_DATA_W4_ZERO_GATE0
+[43/53] PASS edgegemm_core_N3_K_MAX7_DATA_W4_ZERO_GATE1
+[44/53] PASS edgegemm_core_N3_K_MAX7_DATA_W8_ZERO_GATE0
+[45/53] PASS edgegemm_core_N3_K_MAX7_DATA_W8_ZERO_GATE1
+[46/53] PASS edgegemm_core_N4_K_MAX9_DATA_W4_ZERO_GATE0
+[47/53] PASS edgegemm_core_N4_K_MAX9_DATA_W4_ZERO_GATE1
+[48/53] PASS edgegemm_core_N4_K_MAX9_DATA_W8_ZERO_GATE0
+[49/53] PASS edgegemm_core_N4_K_MAX9_DATA_W8_ZERO_GATE1
+[50/53] PASS edgegemm_core_N8_K_MAX11_DATA_W4_ZERO_GATE0
+[51/53] PASS edgegemm_core_N8_K_MAX11_DATA_W4_ZERO_GATE1
+[52/53] PASS edgegemm_core_N8_K_MAX11_DATA_W8_ZERO_GATE0
+[53/53] PASS edgegemm_core_N8_K_MAX11_DATA_W8_ZERO_GATE1
+53/53 RTL simulations passed; 16 modules; 83614 counted checks

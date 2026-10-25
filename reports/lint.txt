@@ -1,0 +1,3 @@
+PASS: strict Verilator -Wall lint
+verilator --lint-only -Wall --top-module edgegemm_core -f rtl/files.f
+verilator --lint-only -Wall --top-module edgegemm_top -f rtl/files.f

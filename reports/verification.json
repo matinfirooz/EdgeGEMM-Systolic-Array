@@ -1,0 +1,644 @@
+{
+  "utc": "2026-10-25T08:48:30.893021+00:00",
+  "tools": {
+    "iverilog": "Icarus Verilog version 12.0 (stable) ()",
+    "vvp": "Icarus Verilog runtime version 12.0 (stable) ()"
+  },
+  "runs": 53,
+  "passed": 53,
+  "modules": 16,
+  "assertion_checks": 83614,
+  "results": [
+    {
+      "module": "signed_mac",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.042,
+      "checks": 3601,
+      "summary": "PASS tb_signed_mac W=8 A=32 gate=1 checks=3601",
+      "log": "reports/rtl_logs/signed_mac.log"
+    },
+    {
+      "module": "pe",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.022,
+      "checks": 400,
+      "summary": "PASS tb_pe W=8 checks=400",
+      "log": "reports/rtl_logs/pe.log"
+    },
+    {
+      "module": "systolic_pe",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.038,
+      "checks": 800,
+      "summary": "PASS tb_systolic_pe checks=800",
+      "log": "reports/rtl_logs/systolic_pe.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.067,
+      "checks": 405,
+      "summary": "PASS tb_systolic_mesh N=3 W=8 checks=405",
+      "log": "reports/rtl_logs/systolic_mesh.log"
+    },
+    {
+      "module": "operand_buffer",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.023,
+      "checks": 35,
+      "summary": "PASS tb_operand_buffer checks=35",
+      "log": "reports/rtl_logs/operand_buffer.log"
+    },
+    {
+      "module": "skew_injector",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.029,
+      "checks": 2026,
+      "summary": "PASS tb_skew_injector checks=2026",
+      "log": "reports/rtl_logs/skew_injector.log"
+    },
+    {
+      "module": "tile_controller",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.02,
+      "checks": 317,
+      "summary": "PASS tb_tile_controller checks=317",
+      "log": "reports/rtl_logs/tile_controller.log"
+    },
+    {
+      "module": "perf_counters",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.018,
+      "checks": 4,
+      "summary": "PASS tb_perf_counters checks=4",
+      "log": "reports/rtl_logs/perf_counters.log"
+    },
+    {
+      "module": "result_buffer",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.021,
+      "checks": 11,
+      "summary": "PASS tb_result_buffer checks=11",
+      "log": "reports/rtl_logs/result_buffer.log"
+    },
+    {
+      "module": "result_streamer",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.031,
+      "checks": 189,
+      "summary": "PASS tb_result_streamer checks=189",
+      "log": "reports/rtl_logs/result_streamer.log"
+    },
+    {
+      "module": "channel_config",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.031,
+      "checks": 16,
+      "summary": "PASS tb_channel_config checks=16",
+      "log": "reports/rtl_logs/channel_config.log"
+    },
+    {
+      "module": "requantize",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.064,
+      "checks": 4096,
+      "summary": "PASS tb_requantize checks=4096",
+      "log": "reports/rtl_logs/requantize.log"
+    },
+    {
+      "module": "affine_requantize",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.795,
+      "checks": 9230,
+      "summary": "PASS tb_affine_requantize checks=9230",
+      "log": "reports/rtl_logs/affine_requantize.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.077,
+      "checks": 120,
+      "summary": "PASS tb_systolic_array N=3 W=8 checks=120",
+      "log": "reports/rtl_logs/systolic_array.log"
+    },
+    {
+      "module": "edgegemm_top",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.097,
+      "checks": 0,
+      "summary": "",
+      "log": "reports/rtl_logs/edgegemm_top.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {},
+      "passed": true,
+      "seconds": 0.103,
+      "checks": 2374,
+      "summary": "PASS tb_edgegemm_core N=4 K=9 W=8 gate=1 jobs=23 checks=2374 overlap_writes=45",
+      "log": "reports/rtl_logs/edgegemm_core.log"
+    },
+    {
+      "module": "signed_mac",
+      "parameters": {
+        "DATA_W": 4,
+        "ACC_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.046,
+      "checks": 3601,
+      "summary": "PASS tb_signed_mac W=4 A=8 gate=0 checks=3601",
+      "log": "reports/rtl_logs/signed_mac_DATA_W4_ACC_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "signed_mac",
+      "parameters": {
+        "DATA_W": 4,
+        "ACC_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.027,
+      "checks": 3601,
+      "summary": "PASS tb_signed_mac W=4 A=8 gate=1 checks=3601",
+      "log": "reports/rtl_logs/signed_mac_DATA_W4_ACC_W8_ZERO_GATE1.log"
+    },
+    {
+      "module": "signed_mac",
+      "parameters": {
+        "DATA_W": 4,
+        "ACC_W": 32,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.027,
+      "checks": 3601,
+      "summary": "PASS tb_signed_mac W=4 A=32 gate=0 checks=3601",
+      "log": "reports/rtl_logs/signed_mac_DATA_W4_ACC_W32_ZERO_GATE0.log"
+    },
+    {
+      "module": "signed_mac",
+      "parameters": {
+        "DATA_W": 4,
+        "ACC_W": 32,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.077,
+      "checks": 3601,
+      "summary": "PASS tb_signed_mac W=4 A=32 gate=1 checks=3601",
+      "log": "reports/rtl_logs/signed_mac_DATA_W4_ACC_W32_ZERO_GATE1.log"
+    },
+    {
+      "module": "pe",
+      "parameters": {
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.028,
+      "checks": 400,
+      "summary": "PASS tb_pe W=4 checks=400",
+      "log": "reports/rtl_logs/pe_DATA_W4.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 1,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.023,
+      "checks": 5,
+      "summary": "PASS tb_systolic_mesh N=1 W=4 checks=5",
+      "log": "reports/rtl_logs/systolic_mesh_N1_DATA_W4.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 1,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.021,
+      "checks": 5,
+      "summary": "PASS tb_systolic_mesh N=1 W=8 checks=5",
+      "log": "reports/rtl_logs/systolic_mesh_N1_DATA_W8.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 2,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.031,
+      "checks": 80,
+      "summary": "PASS tb_systolic_mesh N=2 W=4 checks=80",
+      "log": "reports/rtl_logs/systolic_mesh_N2_DATA_W4.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 2,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.031,
+      "checks": 80,
+      "summary": "PASS tb_systolic_mesh N=2 W=8 checks=80",
+      "log": "reports/rtl_logs/systolic_mesh_N2_DATA_W8.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 4,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.107,
+      "checks": 1280,
+      "summary": "PASS tb_systolic_mesh N=4 W=4 checks=1280",
+      "log": "reports/rtl_logs/systolic_mesh_N4_DATA_W4.log"
+    },
+    {
+      "module": "systolic_mesh",
+      "parameters": {
+        "N": 4,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.129,
+      "checks": 1280,
+      "summary": "PASS tb_systolic_mesh N=4 W=8 checks=1280",
+      "log": "reports/rtl_logs/systolic_mesh_N4_DATA_W8.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 1,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.028,
+      "checks": 24,
+      "summary": "PASS tb_systolic_array N=1 W=4 checks=24",
+      "log": "reports/rtl_logs/systolic_array_N1_DATA_W4.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 1,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.03,
+      "checks": 24,
+      "summary": "PASS tb_systolic_array N=1 W=8 checks=24",
+      "log": "reports/rtl_logs/systolic_array_N1_DATA_W8.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 2,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.048,
+      "checks": 60,
+      "summary": "PASS tb_systolic_array N=2 W=4 checks=60",
+      "log": "reports/rtl_logs/systolic_array_N2_DATA_W4.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 2,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.028,
+      "checks": 60,
+      "summary": "PASS tb_systolic_array N=2 W=8 checks=60",
+      "log": "reports/rtl_logs/systolic_array_N2_DATA_W8.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 4,
+        "DATA_W": 4
+      },
+      "passed": true,
+      "seconds": 0.089,
+      "checks": 204,
+      "summary": "PASS tb_systolic_array N=4 W=4 checks=204",
+      "log": "reports/rtl_logs/systolic_array_N4_DATA_W4.log"
+    },
+    {
+      "module": "systolic_array",
+      "parameters": {
+        "N": 4,
+        "DATA_W": 8
+      },
+      "passed": true,
+      "seconds": 0.134,
+      "checks": 204,
+      "summary": "PASS tb_systolic_array N=4 W=8 checks=204",
+      "log": "reports/rtl_logs/systolic_array_N4_DATA_W8.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 1,
+        "K_MAX": 1,
+        "DATA_W": 4,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.04,
+      "checks": 750,
+      "summary": "PASS tb_edgegemm_core N=1 K=1 W=4 gate=0 jobs=22 checks=750 overlap_writes=2",
+      "log": "reports/rtl_logs/edgegemm_core_N1_K_MAX1_DATA_W4_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 1,
+        "K_MAX": 1,
+        "DATA_W": 4,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.05,
+      "checks": 750,
+      "summary": "PASS tb_edgegemm_core N=1 K=1 W=4 gate=1 jobs=22 checks=750 overlap_writes=2",
+      "log": "reports/rtl_logs/edgegemm_core_N1_K_MAX1_DATA_W4_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 1,
+        "K_MAX": 1,
+        "DATA_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.063,
+      "checks": 750,
+      "summary": "PASS tb_edgegemm_core N=1 K=1 W=8 gate=0 jobs=22 checks=750 overlap_writes=2",
+      "log": "reports/rtl_logs/edgegemm_core_N1_K_MAX1_DATA_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 1,
+        "K_MAX": 1,
+        "DATA_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.088,
+      "checks": 750,
+      "summary": "PASS tb_edgegemm_core N=1 K=1 W=8 gate=1 jobs=22 checks=750 overlap_writes=2",
+      "log": "reports/rtl_logs/edgegemm_core_N1_K_MAX1_DATA_W8_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 2,
+        "K_MAX": 5,
+        "DATA_W": 4,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.067,
+      "checks": 1009,
+      "summary": "PASS tb_edgegemm_core N=2 K=5 W=4 gate=0 jobs=22 checks=1009 overlap_writes=15",
+      "log": "reports/rtl_logs/edgegemm_core_N2_K_MAX5_DATA_W4_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 2,
+        "K_MAX": 5,
+        "DATA_W": 4,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.052,
+      "checks": 1009,
+      "summary": "PASS tb_edgegemm_core N=2 K=5 W=4 gate=1 jobs=22 checks=1009 overlap_writes=15",
+      "log": "reports/rtl_logs/edgegemm_core_N2_K_MAX5_DATA_W4_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 2,
+        "K_MAX": 5,
+        "DATA_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.046,
+      "checks": 1009,
+      "summary": "PASS tb_edgegemm_core N=2 K=5 W=8 gate=0 jobs=22 checks=1009 overlap_writes=15",
+      "log": "reports/rtl_logs/edgegemm_core_N2_K_MAX5_DATA_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 2,
+        "K_MAX": 5,
+        "DATA_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.064,
+      "checks": 1009,
+      "summary": "PASS tb_edgegemm_core N=2 K=5 W=8 gate=1 jobs=22 checks=1009 overlap_writes=15",
+      "log": "reports/rtl_logs/edgegemm_core_N2_K_MAX5_DATA_W8_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 3,
+        "K_MAX": 7,
+        "DATA_W": 4,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.114,
+      "checks": 1278,
+      "summary": "PASS tb_edgegemm_core N=3 K=7 W=4 gate=0 jobs=22 checks=1278 overlap_writes=32",
+      "log": "reports/rtl_logs/edgegemm_core_N3_K_MAX7_DATA_W4_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 3,
+        "K_MAX": 7,
+        "DATA_W": 4,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.099,
+      "checks": 1278,
+      "summary": "PASS tb_edgegemm_core N=3 K=7 W=4 gate=1 jobs=22 checks=1278 overlap_writes=32",
+      "log": "reports/rtl_logs/edgegemm_core_N3_K_MAX7_DATA_W4_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 3,
+        "K_MAX": 7,
+        "DATA_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.074,
+      "checks": 1278,
+      "summary": "PASS tb_edgegemm_core N=3 K=7 W=8 gate=0 jobs=22 checks=1278 overlap_writes=32",
+      "log": "reports/rtl_logs/edgegemm_core_N3_K_MAX7_DATA_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 3,
+        "K_MAX": 7,
+        "DATA_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.073,
+      "checks": 1278,
+      "summary": "PASS tb_edgegemm_core N=3 K=7 W=8 gate=1 jobs=22 checks=1278 overlap_writes=32",
+      "log": "reports/rtl_logs/edgegemm_core_N3_K_MAX7_DATA_W8_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 4,
+        "K_MAX": 9,
+        "DATA_W": 4,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.095,
+      "checks": 2192,
+      "summary": "PASS tb_edgegemm_core N=4 K=9 W=4 gate=0 jobs=22 checks=2192 overlap_writes=45",
+      "log": "reports/rtl_logs/edgegemm_core_N4_K_MAX9_DATA_W4_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 4,
+        "K_MAX": 9,
+        "DATA_W": 4,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.168,
+      "checks": 2192,
+      "summary": "PASS tb_edgegemm_core N=4 K=9 W=4 gate=1 jobs=22 checks=2192 overlap_writes=45",
+      "log": "reports/rtl_logs/edgegemm_core_N4_K_MAX9_DATA_W4_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 4,
+        "K_MAX": 9,
+        "DATA_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.148,
+      "checks": 2374,
+      "summary": "PASS tb_edgegemm_core N=4 K=9 W=8 gate=0 jobs=23 checks=2374 overlap_writes=45",
+      "log": "reports/rtl_logs/edgegemm_core_N4_K_MAX9_DATA_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 4,
+        "K_MAX": 9,
+        "DATA_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.169,
+      "checks": 2374,
+      "summary": "PASS tb_edgegemm_core N=4 K=9 W=8 gate=1 jobs=23 checks=2374 overlap_writes=45",
+      "log": "reports/rtl_logs/edgegemm_core_N4_K_MAX9_DATA_W8_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 8,
+        "K_MAX": 11,
+        "DATA_W": 4,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.577,
+      "checks": 5150,
+      "summary": "PASS tb_edgegemm_core N=8 K=11 W=4 gate=0 jobs=22 checks=5150 overlap_writes=117",
+      "log": "reports/rtl_logs/edgegemm_core_N8_K_MAX11_DATA_W4_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 8,
+        "K_MAX": 11,
+        "DATA_W": 4,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.403,
+      "checks": 5150,
+      "summary": "PASS tb_edgegemm_core N=8 K=11 W=4 gate=1 jobs=22 checks=5150 overlap_writes=117",
+      "log": "reports/rtl_logs/edgegemm_core_N8_K_MAX11_DATA_W4_ZERO_GATE1.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 8,
+        "K_MAX": 11,
+        "DATA_W": 8,
+        "ZERO_GATE": 0
+      },
+      "passed": true,
+      "seconds": 0.386,
+      "checks": 5150,
+      "summary": "PASS tb_edgegemm_core N=8 K=11 W=8 gate=0 jobs=22 checks=5150 overlap_writes=117",
+      "log": "reports/rtl_logs/edgegemm_core_N8_K_MAX11_DATA_W8_ZERO_GATE0.log"
+    },
+    {
+      "module": "edgegemm_core",
+      "parameters": {
+        "N": 8,
+        "K_MAX": 11,
+        "DATA_W": 8,
+        "ZERO_GATE": 1
+      },
+      "passed": true,
+      "seconds": 0.644,
+      "checks": 5150,
+      "summary": "PASS tb_edgegemm_core N=8 K=11 W=8 gate=1 jobs=22 checks=5150 overlap_writes=117",
+      "log": "reports/rtl_logs/edgegemm_core_N8_K_MAX11_DATA_W8_ZERO_GATE1.log"
+    }
+  ]
+}
