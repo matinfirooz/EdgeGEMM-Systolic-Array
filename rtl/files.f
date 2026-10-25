@@ -1,0 +1,16 @@
+rtl/signed_mac.sv
+rtl/pe.sv
+rtl/systolic_pe.sv
+rtl/systolic_mesh.sv
+rtl/operand_buffer.sv
+rtl/skew_injector.sv
+rtl/tile_controller.sv
+rtl/perf_counters.sv
+rtl/result_buffer.sv
+rtl/result_streamer.sv
+rtl/channel_config.sv
+rtl/requantize.sv
+rtl/affine_requantize.sv
+rtl/systolic_array.sv
+rtl/edgegemm_top.sv
+rtl/edgegemm_core.sv
