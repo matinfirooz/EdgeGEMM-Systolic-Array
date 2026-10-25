@@ -1,0 +1,3 @@
+$ iverilog -g2012 -Wall -Itb -s tb_systolic_mesh -o build/systolic_mesh_N2_DATA_W8.vvp -f rtl/files.f tb/tb_systolic_mesh.sv -Ptb_systolic_mesh.N=2 -Ptb_systolic_mesh.DATA_W=8
+PASS tb_systolic_mesh N=2 W=8 checks=80
+tb/tb_systolic_mesh.sv:41: $finish called at 2810000 (1ps)

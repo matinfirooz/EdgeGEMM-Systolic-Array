@@ -1,0 +1,3 @@
+$ iverilog -g2012 -Wall -Itb -s tb_result_streamer -o build/result_streamer.vvp -f rtl/files.f tb/tb_result_streamer.sv
+PASS tb_result_streamer checks=189
+tb/tb_result_streamer.sv:32: $finish called at 1630000 (1ps)

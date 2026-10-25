@@ -1,0 +1,4 @@
+$ iverilog -g2012 -Wall -Itb -s tb_channel_config -o build/channel_config.vvp -f rtl/files.f tb/tb_channel_config.sv
+rtl/channel_config.sv:35: warning: @* is sensitive to all 6 words in array 'config_mem'.
+PASS tb_channel_config checks=16
+tb/tb_channel_config.sv:39: $finish called at 103000 (1ps)

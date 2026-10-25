@@ -1,0 +1,5 @@
+$ iverilog -g2012 -Wall -Itb -s tb_systolic_array -o build/systolic_array_N2_DATA_W8.vvp -f rtl/files.f tb/tb_systolic_array.sv -Ptb_systolic_array.N=2 -Ptb_systolic_array.DATA_W=8
+rtl/operand_buffer.sv:32: warning: @* is sensitive to all 8 words in array 'mem'.
+rtl/operand_buffer.sv:32: warning: @* is sensitive to all 8 words in array 'mem'.
+PASS tb_systolic_array N=2 W=8 checks=60
+tb/tb_systolic_array.sv:37: $finish called at 1694000 (1ps)

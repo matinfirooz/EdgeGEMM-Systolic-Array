@@ -1,0 +1,6 @@
+$ iverilog -g2012 -Wall -Itb -s tb_edgegemm_core -o build/edgegemm_core_N4_K_MAX9_DATA_W4_ZERO_GATE1.vvp -f rtl/files.f tb/tb_edgegemm_core.sv -Ptb_edgegemm_core.N=4 -Ptb_edgegemm_core.K_MAX=9 -Ptb_edgegemm_core.DATA_W=4 -Ptb_edgegemm_core.ZERO_GATE=1
+rtl/operand_buffer.sv:32: warning: @* is sensitive to all 72 words in array 'mem'.
+rtl/operand_buffer.sv:32: warning: @* is sensitive to all 72 words in array 'mem'.
+rtl/channel_config.sv:35: warning: @* is sensitive to all 8 words in array 'config_mem'.
+PASS tb_edgegemm_core N=4 K=9 W=4 gate=1 jobs=22 checks=2192 overlap_writes=45
+tb/tb_edgegemm_core.sv:223: $finish called at 13336000 (1ps)
